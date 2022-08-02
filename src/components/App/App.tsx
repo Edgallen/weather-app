@@ -1,11 +1,12 @@
 import React from "react";
+import AppHeader from "../AppHeader/AppHeader";
 import "./App.scss";
 
 const App = () => {
   return (
-    <div>
-      <h1 className='heading'>Weather App</h1>
-    </div>
+    <>
+      <AppHeader />
+    </>
   );
 };
 

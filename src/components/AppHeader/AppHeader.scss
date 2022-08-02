@@ -1,0 +1,57 @@
+@import '../../assets/scss/color-palette';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  box-shadow: 0px 2px map-get($colors, 'color-separation');
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.title {
+  color: map-get($colors, 'color-title');
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: map-get($colors, 'color-subtitle');
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+}
+
+.searchForm {
+  position: relative;
+}
+
+.input {
+  height: 50px;
+  padding: 0 40px;
+  width: 300px;
+  border: transparent;
+  outline: none;
+  font-size: 15px;
+  background-color: map-get($colors, 'color-card');
+}
+
+.input::placeholder {
+  font-size: 15px;
+}
+
+.searchForm__icon {
+  color: map-get($colors, 'color-subtitle');
+  font-size: 21px;
+  left: calc(30px - 20px);
+  position: absolute;
+}
