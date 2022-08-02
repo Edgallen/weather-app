@@ -1,10 +1,10 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 
 const App = () => {
   return (
     <div>
-      <h1 className='heading'>Hello world</h1>
+      <h1 className='heading'>Weather App</h1>
     </div>
   );
 };
