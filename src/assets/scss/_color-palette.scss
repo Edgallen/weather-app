@@ -3,12 +3,15 @@ $colors: (
     color-background: #FFFFFF,
     color-title: #12243E,
     color-subtitle: #acacac,
-    color-card: #FCFBFC,
     color-separation: #FAFAFC
   ),
   dark-side: (
-    color-background: linear-gradient(100deg, #005C97, #363795),
+    color-background: linear-gradient(70deg, #183A7E, #152E4C),
     color-title: #FFFFFF,
     color-text: #7E8FA8,
+    color-icon: #bac9e0,
+    color-bar: #2A4266,
+    color-progress: #8CB2FB,
+    color-card: linear-gradient(160deg, #284269, #2D4B86)
   )
 );
