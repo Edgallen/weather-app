@@ -1,0 +1,8 @@
+@import '../../assets/scss/color-palette';
+
+.overview {
+  background: map-get($colors, 'dark-side', 'color-background');
+  color: map-get($colors, 'dark-side', 'color-text');
+  width: 35vw;
+  height: 100vh;
+}

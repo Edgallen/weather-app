@@ -1,7 +1,14 @@
 $colors: (
-  color-background: #FFFFFF,
-  color-title: #12243E,
-  color-subtitle: #acacac,
-  color-card: #FCFBFC,
-  color-separation: #FAFAFC
+  light-side: (
+    color-background: #FFFFFF,
+    color-title: #12243E,
+    color-subtitle: #acacac,
+    color-card: #FCFBFC,
+    color-separation: #FAFAFC
+  ),
+  dark-side: (
+    color-background: linear-gradient(100deg, #005C97, #363795),
+    color-title: #FFFFFF,
+    color-text: #7E8FA8,
+  )
 );
