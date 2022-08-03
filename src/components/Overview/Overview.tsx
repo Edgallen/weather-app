@@ -1,82 +1,82 @@
 import React from 'react';
-import './Overview.scss';
+import styles from './Overview.module.scss';
 
 const Overview = () => {
   return (
-    <section className='overview'>
-      <div className='location'>
-        <div className='location__container'>
-          <h2 className='location__title'>Mejasem Barat</h2>
-          <p className='location__subtitle'>Tegal, Indonesia</p>
+    <section className={styles.overview}>
+      <div className={styles.location}>
+        <div className={styles.location__container}>
+          <h2 className={styles.location__title}>Mejasem Barat</h2>
+          <p className={styles.location__subtitle}>Tegal, Indonesia</p>
         </div>
 
-        <h3 className='location__time'>08:54 AM</h3>
+        <h3 className={styles.location__time}>08:54 AM</h3>
       </div>
 
-      <div className='weather'>
-        <i className="ri-sun-cloudy-fill weather__icon"></i>
+      <div className={styles.weather}>
+        <i className={`ri-sun-cloudy-fill ${styles.weather__icon}`}></i>
 
-        <div className='weather__container'>
-          <h1 className='weather__temp'>20° C</h1>
-          <h2 className='weather__status'>Dramatic Cloudy</h2>
+        <div className={styles.weather__container}>
+          <h1 className={styles.weather__temp}>20° C</h1>
+          <h2 className={styles.weather__status}>Dramatic Cloudy</h2>
         </div>
       </div>
 
-      <div className='hourly'>
-        <h2 className='overview__title'>Chance of rain</h2>
+      <div className={styles.hourly}>
+        <h2 className={styles.overview__title}>Chance of rain</h2>
 
-        <div className='hourly__container'>
+        <div className={styles.hourly__container}>
           
-          <div className='hourly__card'>
-            <p className='hourly__time'>7 PM</p>
-            <div className='hourly__bar'>
-              <div className='hourly__progress'></div>
+          <div className={styles.hourly__card}>
+            <p className={styles.hourly__time}>7 PM</p>
+            <div className={styles.hourly__bar}>
+              <div className={styles.hourly__progress}></div>
             </div>
-            <p className='hourly__chance'>44%</p>
+            <p className={styles.hourly__chance}>44%</p>
           </div>
 
-          <div className='hourly__card'>
-            <p className='hourly__time'>7 PM</p>
-            <div className='hourly__bar'>
-              <div className='hourly__progress'></div>
+          <div className={styles.hourly__card}>
+            <p className={styles.hourly__time}>7 PM</p>
+            <div className={styles.hourly__bar}>
+              <div className={styles.hourly__progress}></div>
             </div>
-            <p className='hourly__chance'>44%</p>
+            <p className={styles.hourly__chance}>44%</p>
           </div>
 
-          <div className='hourly__card'>
-            <p className='hourly__time'>7 PM</p>
-            <div className='hourly__bar'>
-              <div className='hourly__progress'></div>
+          <div className={styles.hourly__card}>
+            <p className={styles.hourly__time}>7 PM</p>
+            <div className={styles.hourly__bar}>
+              <div className={styles.hourly__progress}></div>
             </div>
-            <p className='hourly__chance'>44%</p>
+            <p className={styles.hourly__chance}>44%</p>
           </div>
 
-          <div className='hourly__card'>
-            <p className='hourly__time'>7 PM</p>
-            <div className='hourly__bar'>
-              <div className='hourly__progress'></div>
+          <div className={styles.hourly__card}>
+            <p className={styles.hourly__time}>7 PM</p>
+            <div className={styles.hourly__bar}>
+              <div className={styles.hourly__progress}></div>
             </div>
-            <p className='hourly__chance'>44%</p>
+            <p className={styles.hourly__chance}>44%</p>
           </div>
         </div>
       </div>
 
-      <div className='sun'>
-        <h2 className='overview__title'>Sunrise & Sunset</h2>
+      <div className={styles.sun}>
+        <h2 className={styles.overview__title}>Sunrise & Sunset</h2>
 
-        <div className='sun__container'>
-          <div className='sun__card'>
+        <div className={styles.sun__container}>
+          <div className={styles.sun__card}>
 
-            <div className='sun__bio'>
-              <i className="ri-sun-fill sunrise__icon"></i>
+            <div className={styles.sun__bio}>
+              <i className={`ri-sun-fill ${styles.sunrise__icon}`}></i>
 
-              <div className='sun__description'>
-                <p className='sun__text'>Sunrise</p>
-                <h2 className='sun__title'>4:20 AM</h2>
+              <div className={styles.sun__description}>
+                <p className={styles.sun__text}>Sunrise</p>
+                <h2 className={styles.sun__title}>4:20 AM</h2>
               </div>
             </div>
 
-            <p className='sun__count'>4 hours ago</p>
+            <p className={styles.sun__count}>4 hours ago</p>
           </div>
         </div>
       </div>

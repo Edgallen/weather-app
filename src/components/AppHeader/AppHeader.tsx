@@ -1,18 +1,18 @@
 import React from 'react';
-import './AppHeader.scss';
+import styles from './AppHeader.module.scss';
 
 const AppHeader = () => {
   return (
-    <header className='header'>
-      <div className='date'>
-        <h1 className='title'>January 2022</h1>
-        <p className='subtitle'>Thursday, Jan 4, 2022</p>
+    <header className={styles.header}>
+      <div className={styles.date}>
+        <h1 className={styles.title}>January 2022</h1>
+        <p className={styles.subtitle}>Thursday, Jan 4, 2022</p>
       </div>
 
-      <form className='searchForm'>
-        <i className="ri-search-line searchForm__icon"></i>
+      <form className={styles.searchForm}>
+        <i className={`ri-search-line ${styles.searchForm__icon}`}></i>
         <input
-          className='input'
+          className={styles.input}
           type="text" 
           placeholder='Seacrh location here'
         />

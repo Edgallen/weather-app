@@ -1,5 +1,5 @@
 import React from 'react';
-import './TodayPanel.scss';
+import styles from './TodayPanel.module.scss';
 
 const TodayPanel = () => {
   return (

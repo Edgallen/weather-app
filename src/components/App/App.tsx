@@ -2,13 +2,13 @@ import React from "react";
 import AppHeader from "../AppHeader/AppHeader";
 import Overview from "../Overview/Overview";
 import TodayPanel from "../TodayPanel/TodayPanel";
-import "./App.scss";
+import styles from "./App.module.scss";
 
 const App = () => {
   return (
-    <body className="body">
+    <body className={styles.body}>
       <Overview />
-      <main className="main">
+      <main className={styles.main}>
         <AppHeader />
         <TodayPanel />
       </main>
