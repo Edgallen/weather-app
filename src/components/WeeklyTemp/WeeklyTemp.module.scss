@@ -1,0 +1,18 @@
+@import '../../assets/scss/color-palette';
+@import '../../assets/scss/shadows';
+
+.weeklyTemp {
+  margin-top: 40px;
+  padding: 0 40px;
+}
+
+.weeklyTemp__title {
+  font-size: 32px;
+  font-weight: 500;
+  color: map-get($colors, 'light-side', 'color-title');
+}
+
+.chart {
+  width: 65vw;
+  height: 320px;
+}
