@@ -81,12 +81,12 @@ $vertical-padding: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 55px;
 }
 
 .hourly__bar {
   position: relative;
-  height: 40px;
+  height: 35px;
   width: 260px;
   border-radius: 1.4rem;
   background-color: map-get($colors, 'dark-side', 'color-bar');
@@ -95,8 +95,7 @@ $vertical-padding: 40px;
 .hourly__progress {
   position: absolute;
   left: 0;
-  height: 40px;
-  width: 100px;
+  height: 35px;
   border-radius: 1.4rem;
   background-color: map-get($colors, 'dark-side', 'color-progress');
 }
@@ -104,6 +103,7 @@ $vertical-padding: 40px;
 .sun__container {
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 
 .sun__card {
@@ -118,10 +118,31 @@ $vertical-padding: 40px;
 .sun__bio {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .sunrise__icon {
-  font-size: 50px;
+  font-size: 55px;
   color: map-get($colors, 'dark-side', 'color-progress');
+}
+
+.sun__description {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sun__text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.sun__time {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.sun__count {
+  font-size: 16px;
+  font-weight: 300;
 }

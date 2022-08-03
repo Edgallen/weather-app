@@ -1,6 +1,98 @@
 import React from 'react';
 import styles from './Overview.module.scss';
 
+const RainChance = () => {
+  return (
+    <>
+      <div className={styles.hourly__card}>
+        <p className={styles.hourly__time}>7 PM</p>
+        <div className={styles.hourly__bar}>
+          <div 
+            className={styles.hourly__progress}
+            style={{
+              width: '180px'
+            }}
+          ></div>
+        </div>
+        <p className={styles.hourly__chance}>44%</p>
+      </div>
+
+      <div className={styles.hourly__card}>
+        <p className={styles.hourly__time}>7 PM</p>
+        <div className={styles.hourly__bar}>
+          <div 
+            className={styles.hourly__progress}
+            style={{
+              width: '40px'
+            }}
+          ></div>
+        </div>
+        <p className={styles.hourly__chance}>44%</p>
+      </div>
+
+      <div className={styles.hourly__card}>
+        <p className={styles.hourly__time}>7 PM</p>
+        <div className={styles.hourly__bar}>
+          <div 
+            className={styles.hourly__progress}
+            style={{
+              width: '200px'
+            }}
+          ></div>
+        </div>
+        <p className={styles.hourly__chance}>44%</p>
+      </div>
+
+      <div className={styles.hourly__card}>
+        <p className={styles.hourly__time}>7 PM</p>
+        <div className={styles.hourly__bar}>
+          <div 
+            className={styles.hourly__progress}
+            style={{
+              width: '140px'
+            }}
+          ></div>
+        </div>
+        <p className={styles.hourly__chance}>44%</p>
+      </div>
+    </>
+  )
+}
+
+const SunStatus = () => {
+  return (
+    <>
+      <div className={styles.sun__card}>
+
+        <div className={styles.sun__bio}>
+          <i className={`ri-sun-fill ${styles.sunrise__icon}`}></i>
+
+          <div className={styles.sun__description}>
+            <p className={styles.sun__text}>Sunrise</p>
+            <h2 className={styles.sun__time}>4:20 AM</h2>
+          </div>
+        </div>
+
+        <p className={styles.sun__count}>4 hours ago</p>
+      </div>
+      
+      <div className={styles.sun__card}>
+
+        <div className={styles.sun__bio}>
+          <i className={`ri-haze-line ${styles.sunrise__icon}`}></i>
+
+          <div className={styles.sun__description}>
+            <p className={styles.sun__text}>Sunset</p>
+            <h2 className={styles.sun__time}>4:20 AM</h2>
+          </div>
+        </div>
+
+        <p className={styles.sun__count}>4 hours ago</p>
+      </div>
+    </>
+  )
+}
+
 const Overview = () => {
   return (
     <section className={styles.overview}>
@@ -26,38 +118,7 @@ const Overview = () => {
         <h2 className={styles.overview__title}>Chance of rain</h2>
 
         <div className={styles.hourly__container}>
-          
-          <div className={styles.hourly__card}>
-            <p className={styles.hourly__time}>7 PM</p>
-            <div className={styles.hourly__bar}>
-              <div className={styles.hourly__progress}></div>
-            </div>
-            <p className={styles.hourly__chance}>44%</p>
-          </div>
-
-          <div className={styles.hourly__card}>
-            <p className={styles.hourly__time}>7 PM</p>
-            <div className={styles.hourly__bar}>
-              <div className={styles.hourly__progress}></div>
-            </div>
-            <p className={styles.hourly__chance}>44%</p>
-          </div>
-
-          <div className={styles.hourly__card}>
-            <p className={styles.hourly__time}>7 PM</p>
-            <div className={styles.hourly__bar}>
-              <div className={styles.hourly__progress}></div>
-            </div>
-            <p className={styles.hourly__chance}>44%</p>
-          </div>
-
-          <div className={styles.hourly__card}>
-            <p className={styles.hourly__time}>7 PM</p>
-            <div className={styles.hourly__bar}>
-              <div className={styles.hourly__progress}></div>
-            </div>
-            <p className={styles.hourly__chance}>44%</p>
-          </div>
+          <RainChance />
         </div>
       </div>
 
@@ -65,19 +126,7 @@ const Overview = () => {
         <h2 className={styles.overview__title}>Sunrise & Sunset</h2>
 
         <div className={styles.sun__container}>
-          <div className={styles.sun__card}>
-
-            <div className={styles.sun__bio}>
-              <i className={`ri-sun-fill ${styles.sunrise__icon}`}></i>
-
-              <div className={styles.sun__description}>
-                <p className={styles.sun__text}>Sunrise</p>
-                <h2 className={styles.sun__title}>4:20 AM</h2>
-              </div>
-            </div>
-
-            <p className={styles.sun__count}>4 hours ago</p>
-          </div>
+          <SunStatus />
         </div>
       </div>
     </section>
