@@ -5,13 +5,14 @@ $horizontal-padding: 6vh;
 $vertical-padding: 40px;
 
 .overview {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   padding: $vertical-padding $horizontal-padding;
   background: map-get($colors, 'dark-side', 'color-background');
   color: map-get($colors, 'dark-side', 'color-title');
-  width: calc(35vw - $horizontal-padding * 2);
-  height: calc(100vh - $vertical-padding * 2);
+  width: 35vw;
+  height: 100vh;
 }
 
 .overview__title {
