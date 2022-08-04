@@ -20,11 +20,13 @@
 }
 
 .card {
+  box-sizing: border-box;
   display: flex;
   gap: 80px;
   align-items: center;
   box-sizing: border-box;
   padding: 20px 40px;
+  width: 450px;
   box-shadow: map-get($shadows, 'shadow-airbnb');
 }
 

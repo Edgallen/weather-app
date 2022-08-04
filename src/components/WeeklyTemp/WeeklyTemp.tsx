@@ -1,4 +1,4 @@
-import React, { useState, FC } from 'react';
+import React, { useState, FC, useEffect } from 'react';
 import styles from './WeeklyTemp.module.scss';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
@@ -12,6 +12,13 @@ type TTempChart = {
 }
 
 const TempChart: FC<TTempChart> = ({ chartData }) => {
+  const [areaPosition, setAreaPosition] = useState<any>({});
+  const [currentPoint, setCurrentPoint] = useState<any>({})
+
+  useEffect(() => {
+    console.log(areaPosition);
+  }, [areaPosition])
+
   return (
     <ResponsiveContainer width='80%' height='100%'>
       <AreaChart
@@ -54,6 +61,7 @@ const TempChart: FC<TTempChart> = ({ chartData }) => {
         />
         <Tooltip
           cursor={{ stroke: '#617BAE', strokeWidth: 3 }}
+          position={{ y: -5}}
         />
         <Area 
           type="monotone" 
@@ -63,6 +71,12 @@ const TempChart: FC<TTempChart> = ({ chartData }) => {
           strokeWidth={5}
           fillOpacity={1} 
           fill="url(#colorTemp)"
+          onMouseOver={(data)=> {
+            setAreaPosition(data)
+          }}
+          onMouseLeave={(data) => {
+            setAreaPosition(data)
+          }}
         />
       </AreaChart>
     </ResponsiveContainer>
