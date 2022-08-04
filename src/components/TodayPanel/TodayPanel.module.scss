@@ -1,0 +1,72 @@
+@import '../../assets/scss/color-palette';
+@import '../../assets/scss/shadows';
+
+.todayPanel {
+  margin-top: 40px;
+  padding: 0 40px;
+}
+
+.todayPanel__title {
+  font-size: 32px;
+  font-weight: 500;
+  color: map-get($colors, 'light-side', 'color-title');
+}
+
+.cards__container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px 40px;
+  width: 450px;
+  box-shadow: map-get($shadows, 'shadow-airbnb');
+}
+
+.status__container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.status__icon {
+  color: map-get($colors, 'light-side', 'color-icon');
+  font-size: 45px;
+}
+
+.status__title {
+  color: map-get($colors, 'light-side', 'color-subtitle');
+  font-weight: 400;
+}
+
+.status__info {
+  font-size: 38px;
+  font-weight: 500;
+  color: map-get($colors, 'light-side', 'color-title');
+}
+
+.changes__container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.changes__icon {
+  font-size: 30px;
+}
+
+.icon__increase {
+  color: map-get($colors, 'light-side', 'color-positive');
+}
+
+.icon__decrease {
+  color: map-get($colors, 'light-side', 'color-negative');
+  transform: rotate(180deg);
+}

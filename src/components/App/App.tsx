@@ -1,10 +1,19 @@
 import React from "react";
-import "./App.scss";
+import AppHeader from "../AppHeader/AppHeader";
+import Overview from "../Overview/Overview";
+import TodayPanel from "../TodayPanel/TodayPanel";
+import WeeklyTemp from "../WeeklyTemp/WeeklyTemp";
+import styles from "./App.module.scss";
 
 const App = () => {
   return (
-    <div>
-      <h1 className='heading'>Weather App</h1>
+    <div className={styles.body}>
+      <Overview />
+      <main className={styles.main}>
+        <AppHeader />
+        <TodayPanel />
+        <WeeklyTemp />
+      </main>
     </div>
   );
 };

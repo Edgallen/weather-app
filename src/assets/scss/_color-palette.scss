@@ -1,0 +1,20 @@
+$colors: (
+  light-side: (
+    color-background: #FFFFFF,
+    color-title: #12243E,
+    color-subtitle: #a0a0a0,
+    color-separation: #FAFAFC,
+    color-icon: #5C77BC,
+    color-positive: #3763CE,
+    color-negative: #C43232
+  ),
+  dark-side: (
+    color-background: linear-gradient(70deg, #183A7E, #152E4C),
+    color-title: #FFFFFF,
+    color-text: #7E8FA8,
+    color-icon: #bac9e0,
+    color-bar: #2A4266,
+    color-progress: #8CB2FB,
+    color-card: linear-gradient(160deg, #284269, #2D4B86)
+  )
+);

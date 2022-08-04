@@ -1,0 +1,149 @@
+@import '../../assets/scss/color-palette';
+@import '../../assets/scss/shadows';
+
+$horizontal-padding: 6vh; 
+$vertical-padding: 40px;
+
+.overview {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: $vertical-padding $horizontal-padding;
+  background: map-get($colors, 'dark-side', 'color-background');
+  color: map-get($colors, 'dark-side', 'color-title');
+  width: 35vw;
+  min-height: 100vh;
+}
+
+.overview__title {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.location__title {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.location__subtitle {
+  font-size: 18px;
+  color: map-get($colors, 'dark-side', 'color-text');
+}
+
+.location__time {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  box-shadow: map-get($shadows, 'shadow-separator');
+}
+
+.weather__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather__icon {
+  font-size: 50px;
+  color: map-get($colors, 'dark-side', 'color-icon');
+}
+
+.weather__temp {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.weather__status {
+  font-size: 23px;
+  max-width: 100px;
+  font-weight: 300;
+  text-align: end;
+}
+
+.hourly {
+  margin-bottom: 30px;
+}
+
+.hourly__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+}
+
+.hourly__bar {
+  position: relative;
+  height: 35px;
+  width: 260px;
+  border-radius: 1.4rem;
+  background-color: map-get($colors, 'dark-side', 'color-bar');
+}
+
+.hourly__progress {
+  position: absolute;
+  left: 0;
+  height: 35px;
+  border-radius: 1.4rem;
+  background-color: map-get($colors, 'dark-side', 'color-progress');
+}
+
+.sun__container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sun__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 0.8rem;
+  background: map-get($colors, 'dark-side', 'color-card');
+}
+
+.sun__bio {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sunrise__icon {
+  font-size: 55px;
+  color: map-get($colors, 'dark-side', 'color-progress');
+}
+
+.sun__description {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sun__text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.sun__time {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.sun__count {
+  font-size: 16px;
+  font-weight: 300;
+}
